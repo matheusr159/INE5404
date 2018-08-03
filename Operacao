@@ -1,0 +1,70 @@
+package exeroperacoes;
+
+import java.util.Scanner;
+
+// @author Matheus Ribeiro
+
+public class Operacao {
+    
+    int resposta;
+    int n1 = 0;
+    int n2 = 0;
+    
+    Scanner ler = new Scanner(System.in);
+    
+    void soma(){
+        
+        System.out.println("SOMA");
+        System.out.println("Digite o primeiro numero:");
+        n1 = ler.nextInt();
+        System.out.println("Digite o segundo numero:");
+        n2 = ler.nextInt();
+        System.out.println("Resposta:" + (n1+n2));
+    }
+    
+    void subtracao(){
+        
+        System.out.println("SUBTRAÇÃO");
+        System.out.println("Digite o primeiro numero:");
+        n1 = ler.nextInt();
+        System.out.println("Digite o segundo numero:");
+        n2 = ler.nextInt();
+        System.out.println("Resposta:" + (n1 - n2));
+    }
+    
+    void multiplicacao(){
+        
+        System.out.println("MULTIPLICAÇÃO");
+        System.out.println("Digite o primeiro numero:");
+        n1 = ler.nextInt();
+        System.out.println("Digite o segundo numero:");
+        n2 = ler.nextInt();
+        System.out.println("Resposta:" + (n1*n2));
+    }	 	  	  		  	    	     	   	     	        	 	
+    
+    void divisao(){
+        
+        System.out.println("DIVISAO");
+        System.out.println("Digite o primeiro numero:");
+        n1 = ler.nextInt();
+        System.out.println("Digite o segundo numero:");
+        n2 = ler.nextInt();
+        System.out.println("Resposta:" + (n1/n2));
+    }
+    
+    void mediaPonderada(double n1, double n2, double p1, double p2){
+        System.out.println("Resposta:" + (n1*p1) + (n2*p2) / (p1+p2));
+    }
+    
+    void factorial(int n){
+        
+        int cont = 1;
+        int r = 1;
+        
+        while(cont <= n){
+            r = r * cont;
+            cont++;
+        }
+        System.out.println("Resposta:" + r);
+    }
+}	 	  	  		  	    	     	   	     	        	 	
